@@ -1,0 +1,18 @@
+
+Before you use the command : make , you should execute : $ export LD_LIBRARY_PATH=/home/ykao/fastjet-install/lib:$LD_LIBRARY_PATH
+					or where your library documents at .
+	ex: export LD_LIBRARY_PATH=/home/menghsiu/CMSSW_5_3_32/src/Demo/DemoAnalyzer/fastjet-install/lib:$LD_LIBRARY_PATH
+
+
+//Belowing is how to get a myfile.root using other dataset
+You can find the MyAnalyzer.cc at ~/menghsiu/CMSSW_5_3_32/src/Demo/DemoAnalyzer/src
+which is the c++ code extract the data from cms-opendata
+
+And you can also find demoanalyzer_cfg_practice.py at ~/menghsiu/CMSSW_5_3_32/src/Demo/DemoAnalyzer
+You can edit it to change the used data.
+Now the data used is root://eospublic.cern.ch//eos/opendata/cms/Run2012C/DoubleMuParked/AOD/22Jan2013-v1/10000/F2878994-766C-E211-8693-E0CB4EA0A939.root
+
+cmsRun demoanalyzer_cfg_practice.py and you can get the extracted file : myfile.root
+
+
+820ver is the first version of the code.
